@@ -2,7 +2,7 @@ This directory contains all of the JSP files. These are the web pages that are s
 
 Users start out at the login screen, where they'll type in their username and password. The usernames and passwords are stored in a Microsoft Access database in a hashed form. The password that the user types in is hashed and compared with the hash stored in the database. If it's a match, the user is accepted. The program then looks at a boolean value in the database associated with that account to see if the user is a technician or an administrator.
 
-If technician, the user will see the documentation button only (main.jsp). If administrator, other functions will appear, such as the ability to add additional users to the database, letting them sign in (adminmain.jsp).
+If technician, the user will see the documentation button only (main.jsp). If administrator, other functions will appear, such as the ability to add additional users to the database, letting them sign in (adminmain.jsp). There is a session timeout of 30 minutes. Every page is coded to check if the user is logged in and redirects them to login.jsp if not.
 
 ------------
 
@@ -17,3 +17,5 @@ For each device, there is a separate section. Nothing of particular note here.
 All fields in the documentation are checked for sanity (900 number are only 9 digits and the user must have at least 1 device, for example) and completeness (most fields are required)
 
 Upon submission, the information in the documentation screen is entered into the access database and the success.jsp screen is displayed for a few seconds. Afterwards, it goes back to the main menu.
+
+-----------
