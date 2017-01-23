@@ -2,7 +2,7 @@ This directory contains all of the JSP files. These are the web pages that are s
 
 Users start out at the login screen, where they'll type in their username and password. The usernames and passwords are stored in a Microsoft Access database in a hashed form. The password that the user types in is hashed and compared with the hash stored in the database. If it's a match, the user is accepted. The program then looks at a boolean value in the database associated with that account to see if the user is a technician or an administrator.
 
-If technician, the user will see the documentation button only. If administrator, other functions will appear, such as the ability to add additional users to the database, letting them sign in.
+If technician, the user will see the documentation button only (main.jsp). If administrator, other functions will appear, such as the ability to add additional users to the database, letting them sign in (adminmain.jsp).
 
 ------------
 
